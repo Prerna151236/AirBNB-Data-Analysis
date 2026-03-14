@@ -1,0 +1,181 @@
+Airbnb Data Analysis Project 
+Documentation 
+1. Project Title 
+Airbnb Listings Analysis & Revenue Insights Dashboard 
+Prerna Patil 
+2. Project Overview 
+This project analyzes Airbnb listing data to identify patterns in occupancy, pricing, revenue 
+generation, customer ratings, and neighborhood performance. 
+The objective is to transform raw Airbnb listing data into meaningful business insights using 
+Python for data cleaning & EDA and Power BI for dashboard visualization. 
+The final dashboard helps stakeholders understand: 
+ Revenue performance 
+ Occupancy trends 
+ Property type distribution 
+ Neighborhood listing performance 
+ Pricing patterns and review behavior 
+3. Business Problem 
+Airbnb hosts and property managers need insights to: 
+ Identify high-performing neighborhoods 
+ Understand pricing vs revenue relationships 
+ Analyze customer review patterns 
+ Optimize property type offerings 
+ Improve occupancy and revenue 
+Without structured analysis, decision-making becomes difficult. 
+4. Project Objectives 
+1. Clean and prepare the Airbnb dataset. 
+2. Perform Exploratory Data Analysis (EDA). 
+3. Identify important business insights. 
+4. Build an interactive Power BI dashboard. 
+5. Present data-driven recommendations. 
+5. Dataset Information 
+The dataset contains information related to Airbnb listings such as: 
+Column 
+id 
+Description 
+Unique listing ID 
+neighbourhood_cleansed Neighborhood where property is located 
+room_type 
+Type of room offered 
+property_type 
+price 
+number_of_reviews 
+review_scores_rating 
+Type of property 
+Listing price 
+Total reviews received 
+Average rating 
+estimated_revenue_l365d Estimated yearly revenue 
+availability_365 
+Availability days 
+The dataset was cleaned before visualization. 
+6. Data Cleaning Process (Python) 
+The dataset initially contained missing values, irrelevant columns, and inconsistent formats. 
+Cleaning Steps 
+1. Removed unnecessary columns 
+Example: 
+ calendar_updated 
+ host_neighbourhood 
+ neighbourhood_group_cleansed 
+2. Handled missing values 
+ Replaced missing values where possible 
+ Removed rows with excessive null values 
+3. Converted data types 
+Example: 
+ Price converted to numeric 
+ Date columns standardized 
+4. Removed duplicates 
+5. Validated numerical fields 
+6. Exported final cleaned dataset for Power BI 
+Final dataset used for dashboard visualization. 
+7. Exploratory Data Analysis (EDA) 
+EDA was performed using Python (Pandas, Matplotlib, Seaborn). 
+Key analysis included: 
+Price Distribution 
+Understanding how Airbnb listing prices vary across the dataset. 
+Revenue Analysis 
+Analyzed estimated yearly revenue across listings. 
+Review Patterns 
+Studied the relationship between review counts and ratings. 
+Neighborhood Analysis 
+Identified neighborhoods with the highest number of listings. 
+Room Type Distribution 
+Analyzed the proportion of: 
+ Entire home/apartment 
+ Private room 
+ Hotel room 
+ Shared room 
+8. Key Insights from Analysis 
+1. Entire Home Listings Dominate the Market 
+Most listings belong to the Entire home/apartment category, representing nearly 80% of 
+total listings. 
+This suggests that hosts prefer renting full properties rather than individual rooms. 
+2. Sydney Has the Highest Listing Concentration 
+Among all neighborhoods, Sydney shows the highest number of listings, indicating strong 
+tourism demand. 
+Other notable areas include: 
+ Liverpool 
+ Manly 
+ Pittwater 
+3. Price and Revenue Relationship 
+Higher-priced listings tend to generate higher estimated yearly revenue, but only when 
+supported by strong reviews and consistent bookings. 
+4. Review Activity Reflects Property Popularity 
+Listings with higher review counts generally show better ratings and higher occupancy. 
+This indicates that guest experience significantly impacts booking frequency. 
+9. Power BI Dashboard Design 
+The dashboard was created to present insights interactively. 
+Key KPI Metrics 
+KPI 
+Value 
+KPI 
+Value 
+Average Occupancy 70.70 
+Total Revenue 
+316M 
+Average Rating 
+Total Listings 
+3.91 
+18K 
+10. Dashboard Visualizations 
+1. Price vs Revenue Scatter Plot 
+Shows the relationship between listing price and estimated revenue. 
+2. Room Type Distribution 
+Donut chart showing listing count by room type. 
+Insight: 
+Entire home listings dominate the platform. 
+3. Listings by Neighborhood 
+Bar chart highlighting neighborhoods with the highest listing counts. 
+4. Price Distribution by Neighborhood 
+Shows how pricing varies across different locations. 
+11. Interactive Filters (Slicers) 
+The dashboard includes filters for better analysis: 
+ Neighborhood 
+ Room Type 
+ Property Type 
+ Price Range 
+These allow users to dynamically explore the dataset. 
+12. Business Recommendations 
+Based on the analysis: 
+1. Focus on High-Demand Neighborhoods 
+Hosts should prioritize locations like Sydney and Liverpool where listing demand is high. 
+2. Improve Guest Experience 
+Listings with higher reviews tend to attract more bookings. 
+Improving guest experience can increase occupancy. 
+3. Optimize Pricing Strategy 
+Hosts should balance price and review ratings to maximize revenue. 
+Overpricing without strong reviews may reduce bookings. 
+4. Diversify Property Types 
+Although entire homes dominate, private rooms may attract budget travelers and increase 
+occupancy. 
+13. Tools & Technologies Used 
+Tool 
+Python 
+Pandas 
+Purpose 
+Data Cleaning & EDA 
+Data manipulation 
+Matplotlib / Seaborn Visualization 
+Power BI 
+Dashboard creation 
+Excel 
+Data inspection 
+14. Project Outcome 
+The project successfully transformed raw Airbnb listing data into actionable business 
+insights through data analysis and visualization. 
+The final Power BI dashboard enables users to: 
+ Monitor revenue trends 
+ Compare neighborhoods 
+ Analyze pricing patterns 
+ Evaluate listing performance 
+15. Future Improvements 
+Possible improvements include: 
+ Predictive analysis for pricing optimization 
+ Occupancy forecasting models 
+ Machine learning for revenue prediction 
+ Sentiment analysis of customer reviews 
+16. Conclusion 
+This project demonstrates how data analysis can provide valuable insights into the Airbnb 
+marketplace. 
+Through structured data cleaning, exploratory analysis, and interactive dashboards, the 
+project enables better decision-making for hosts and property managers. 
